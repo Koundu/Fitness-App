@@ -1,0 +1,75 @@
+*{
+background-image: url("./assets/bgimage.jpg");
+}
+
+.abeezee-regular {
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .abeezee-regular-italic {
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+
+
+.navbar{
+    display: flex ;
+    position: sticky ;
+    top: 0px ;
+    width: 1440px ;
+    height: 85px !important;
+    padding: 20px 40px 20px 40px;
+    background-color: transparent;
+    justify-content: space-between;
+    
+}
+
+.navbar > #button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#button:first-child{
+    width: 66px;
+    height: auto;
+    font-size: 10px;
+}
+
+
+
+#button:last-child{
+    background-color: white !important;
+}
+#button:nth-child(2n){
+    background-color: transparent;
+    border: 1px solid white !important;
+    width: 128px;
+}
+#button{
+    width: 118px;
+    height: 45px;
+    border: 1px;
+    border-radius: 2px;
+    font-family: "ABeeZee",sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+}
+
+.navbar> #primary{
+    width: 40px;
+    height: 20px;
+    margin: 32.5px 20px 32.5px 20px;
+}
+
+.navbar> #primary,#button:hover{
+    cursor: pointer;
+}
+
+

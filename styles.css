@@ -1,31 +1,25 @@
-*{
-background-image: url("./assets/bgimage.jpg");
+
+.homepage{
+    width: 100%;
+    width: 1440px;
+    height: 900px;
+    background-image: url("./assets/bgImage.jpg");
+    margin-top: -85px;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    align-content: end;
 }
-
-.abeezee-regular {
-    font-family: "ABeeZee", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .abeezee-regular-italic {
-    font-family: "ABeeZee", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-
 
 .navbar{
     display: flex ;
     position: sticky ;
+    width: 1440px;
     top: 0px ;
-    width: 1440px ;
-    height: 85px !important;
-    padding: 20px 40px 20px 40px;
+    height: 85px;
     background-color: transparent;
     justify-content: space-between;
-    
+    align-items: center;
 }
 
 .navbar > #button-div{
@@ -37,14 +31,14 @@ background-image: url("./assets/bgimage.jpg");
 
 #button:first-child{
     width: 66px;
-    height: auto;
     font-size: 10px;
+    border-color: black;
 }
-
-
 
 #button:last-child{
     background-color: white !important;
+    color: black;
+    margin-inline-end: 5px;
 }
 #button:nth-child(2n){
     background-color: transparent;
@@ -60,16 +54,74 @@ background-image: url("./assets/bgimage.jpg");
     font-weight: 400;
     font-size: 12px;
     color: white;
+    background-color: inherit;
+    font-weight: bold;
 }
 
 .navbar> #primary{
     width: 40px;
     height: 20px;
-    margin: 32.5px 20px 32.5px 20px;
+    margin-left: 40px;
 }
 
 .navbar> #primary,#button:hover{
     cursor: pointer;
 }
+
+.display{
+    width: 1440px;
+    height: 900px;
+    background: linear-gradient(45deg,#000000 0 40%, #000000 80% 0%);
+    background-image: url("./assets/backgroundImage1.jpg");
+    overflow: hidden;
+    color: white;
+    gap: 40px;
+}
+
+.display > div{
+    align-items: end;
+    text-align: end;
+}
+
+
+
+#yoga,#hiit,#ride{
+    margin-left: calc(100% - 720px);
+    width: 720px !important;
+    height: 300px !important;
+    border: 1px solid #ABABAB;
+}
+
+#yoga,#hiit,#ride{
+    cursor: pointer;
+    text-align: left;
+    align-content: center;
+    padding: 0px 0px 0px 40px;
+    font-family: 'ABeeZee',sans-serif;
+}
+#yoga > div >p{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: inherit;
+}
+
+#yoga >div> p:nth-child(2n){
+    font-family: "Sailec",sans-serif;
+    font-weight: 400;
+}
+
+#yoga > button{
+    display: flex;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    color: white;
+    margin: top 25px;;
+}
+
+
+
+
+
 
 

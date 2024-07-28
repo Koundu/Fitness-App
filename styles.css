@@ -215,17 +215,17 @@
     background-image: url("./assets/wellness&spa.jpg"); 
     overflow: hidden;
     color: white;
+    justify-content: space-between;
 }
 
 .wellness > div:first-child{
-    margin-top: 622px;
-    width: 510px;
-    height: 238px !important;
+    margin-top: 600px;
+    width: calc(1440px - 720px);
     gap: 30px;
     margin-left: 40px;
 }
 
-.wellness > div > p:first-child{
+.wellness > div:first-child > p:first-child{
     font-family: 'ABeeZee',sans-serif;
     font-size: 12px;
     font-weight: 400;
@@ -241,12 +241,11 @@
     font-weight: 400;
     line-height: 40px;
     text-align: left;
-    width: 640px !important;
-    margin-block-end: 0px !important;
+    width: 640px;
 }
 
 
-.wellness > div >p:nth-child(3n){
+.wellness > div:first-child >p:nth-child(3n){
     font-family: 'Sailec',sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -263,14 +262,148 @@
     width: 195px ;
 }
 
-.wellness > div:last-child{
+#spa-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 450px;
+    height: 420px ;
+    padding: 0px 40px 20px 40px;
+    width: 720px !important;
+}
+
+
+#spa-items > p{
+    margin: 0px;
+    height: 54px;
+    align-content: center;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    font-family: ABeeZee;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+#spa-items > p:hover{
+    cursor: pointer;
+}
+
+#spa-items > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#spa-items > div > button{
+    background: none;
+    color: inherit;
+    border: none;
+}
+#spa-items > div > button:hover{
+    cursor: pointer;
+}
+
+#geosist-name{
+    font-family: ABeeZee;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    width: 119px;
+    height: 14px;
+    margin-top: 150px;
+    margin-left: 50px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.geosist{
+    display: flex;
+    flex-direction: row;
+    margin-top: 47px;
+    gap: 0px;
+    width: 1440px !important;
+}
+
+
+.geosist > div > img{
+    width: 720px;
+    height: 429px;
     margin: 0px 0px 0px 0px;
 }
 
-#spa-items{
+.geosist > div:first-child > div{
+    display: flex;
+    flex-direction: row;
     width: 720px;
-    height: 420px;
-    margin: 420px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    border: 1px solid green;
+}
+
+.geosist > div > div > div{
+    padding: 40px;
+}
+
+.geosist > div:last-child>
+
+
+.geosist > div > div > div:first-child >p:first-child{
+    font-family: 'ABeeZee',sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+}
+.geosist > div > div > div:first-child >p:nth-child(2){
+    font-family: 'Sailec',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #000000;
+}
+.geosist > div > div > div:first-child >p:nth-child(3){
+    font-family: 'Sailec',sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: left;
+    color: #00000040;
+}
+
+.geosist > div > div > div{
+    border: 1px solid #00000040;
+}
+
+.geosist > div>div>div:last-child{
+    width: 120px;
+}
+
+.geosist > div>div>div:last-child>p:first-child{
+    width: max-content;
+    color: #c79d5b;
+    font-family: 'ABeeZee',sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.18px;
+    letter-spacing: 0.02em;
+    text-align: center;    
+}
+
+.geosist > div>div>div:last-child>p>span{
+    color: #c79d5b;
+}
+
+.geosist > div > div{
+    display: flex;
+}
+
+.geosist > div > div > div > p:first-child{
+    font-family: ABeeZee;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
 }

@@ -46,7 +46,8 @@
     width: 128px;
 }
 #button{
-    width: 118px;
+    width: auto;
+    min-width: 118px;
     height: 45px;
     border: 1px;
     border-radius: 2px;
@@ -69,19 +70,60 @@
 }
 
 .display{
+    display: flex;
     width: 1440px;
     height: 900px;
+    background-size: cover;
     background: linear-gradient(45deg,#000000 0 40%, #000000 80% 0%);
     background-image: url("./assets/backgroundImage1.jpg");
     overflow: hidden;
     color: white;
     gap: 40px;
 }
-
-.display > div{
-    align-items: end;
-    text-align: end;
+.display > div:first-child{
+    margin-top: 622px;
+    width: 510px;
+    height: 238px !important;
+    gap: 30px;
+    margin-left: 40px;
 }
+.display > #program{
+    margin-left: auto;
+}
+
+.display > div > p:first-child{
+    font-family: 'ABeeZee',sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.18px;
+    letter-spacing: 0.02em;
+    text-align: left;  
+    margin-top: 0px; 
+}
+
+.display > div  >p:nth-child(2n){
+    font-family: 'ABeeZee',sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    margin-block-end: 0px !important;
+}
+
+
+.display > div >p:nth-child(3n){
+    font-family: 'Sailec',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-block-start: 15px !important;
+}
+
+.display > div:first-child{
+    gap: 30px !important;
+}
+
 
 #yoga,#hiit,#ride{
     width: 720px;
@@ -120,7 +162,7 @@
     background-color: transparent;
     box-shadow: none;
     border: none;
-    color: white;
+    color: inherit;
     margin-top: 25px;
 }
 
@@ -129,7 +171,7 @@
     background-color: transparent;
     box-shadow: none;
     border: none;
-    color: white;
+    color: inherit;
     margin: top 25px;
 } 
 
@@ -138,7 +180,7 @@
     background-color: transparent;
     box-shadow: none;
     border: none;
-    color: white;
+    color: inherit;
     margin: top 25px;
 } 
 
@@ -163,8 +205,72 @@
     color: black;
 }
 
+.wellness{
+    display: flex;
+    width: 1440px;
+    height: 900px;
+    gap: 0px;
+    opacity: 0px;
+    background: linear-gradient(45deg,#000000 0 40%, #000000 80% 0%);
+    background-image: url("./assets/wellness&spa.jpg"); 
+    overflow: hidden;
+    color: white;
+}
+
+.wellness > div:first-child{
+    margin-top: 622px;
+    width: 510px;
+    height: 238px !important;
+    gap: 30px;
+    margin-left: 40px;
+}
+
+.wellness > div > p:first-child{
+    font-family: 'ABeeZee',sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.18px;
+    letter-spacing: 0.02em;
+    text-align: left;  
+    margin-top: 0px; 
+}
+
+.wellness > div:first-child  >p:nth-child(2n){
+    font-family: 'ABeeZee',sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    width: 640px !important;
+    margin-block-end: 0px !important;
+}
 
 
+.wellness > div >p:nth-child(3n){
+    font-family: 'Sailec',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-block-start: 15px !important;
+}
 
+.wellness > div:first-child{
+    gap: 30px !important;
+}
 
+.wellness >div > #button{
+    width: 195px ;
+}
 
+.wellness > div:last-child{
+    margin: 0px 0px 0px 0px;
+}
+
+#spa-items{
+    width: 720px;
+    height: 420px;
+    margin: 420px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border: 1px solid green;
+}

@@ -8,8 +8,22 @@
     color: white;
     font-size: xx-large;
     text-align: center;
-    align-content: end;
+    align-content: center;
 }
+
+.homepage > p{
+    font-family: 'ABeeZee',sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 654px;
+    margin-left: 393px;
+}
+
 
 .navbar{
     display: flex ;
@@ -40,10 +54,15 @@
     color: black;
     margin-inline-end: 5px;
 }
-#button:nth-child(2n){
+#button:nth-child(2){
     background-color: transparent;
     border: 1px solid white !important;
     width: 128px;
+}
+
+#button:nth-child(2):hover{
+    background-color: white;
+    color: #000000;
 }
 #button{
     width: auto;
@@ -59,10 +78,26 @@
     font-weight: bold;
 }
 
+.homepage > #button{
+    background-color: transparent !important;
+    border: 1px solid white !important;
+    width: 128px;
+    color: white !important;
+    width: 160px !important;
+}
+
+.homepage > #button:hover{
+    background-color: white !important;
+    color: #000000 !important;
+}
+
 .navbar> #primary{
     width: 40px;
     height: 20px;
     margin-left: 40px;
+    background-color: inherit;
+    border: none;
+    box-shadow: none;
 }
 
 .navbar> #primary,#button:hover{
@@ -91,6 +126,8 @@
     margin-left: auto;
 }
 
+
+
 .display > div > p:first-child{
     font-family: 'ABeeZee',sans-serif;
     font-size: 12px;
@@ -101,7 +138,7 @@
     margin-top: 0px; 
 }
 
-.display > div  >p:nth-child(2n){
+.display > div  >p:nth-child(2){
     font-family: 'ABeeZee',sans-serif;
     font-size: 40px;
     font-weight: 400;
@@ -111,7 +148,7 @@
 }
 
 
-.display > div >p:nth-child(3n){
+.display > div >p:nth-child(3){
     font-family: 'Sailec',sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -140,13 +177,30 @@
     font-family: 'ABeeZee',sans-serif;
 }
 
-#yoga,#ride,#hiit > div >p:first-child{
+#yoga > div:first-child > p:first-child{
     font-size: 24px;
+    margin-top: 100px;
+}
+#hiit > div:first-child > p:first-child{
+    font-size: 24px;
+    margin-top: 100px;
+}
+#ride > div:first-child > p:first-child{
+    font-size: 24px;
+    margin-top: 100px;
 }
 
-#hiit,#yoga,#ride > div > p:nth-child(2n){
+#yoga > div:first-child > p:last-child{
     font-size: 16px;
 }
+#hiit > div:first-child > p:last-child{
+    font-size: 16px;
+}
+#ride > div:first-child > p:last-child{
+    font-size: 16px;
+}
+
+
 #yoga >div> p:last-child{
     font-family: "Sailec",sans-serif;
     font-weight: 400;
@@ -329,6 +383,10 @@
     width: 1440px !important;
 }
 
+.geosist>div{
+    display: flex;
+    flex-direction: column;
+}
 
 .geosist > div > img{
     width: 720px;
@@ -345,8 +403,6 @@
 .geosist > div > div > div{
     padding: 40px;
 }
-
-.geosist > div:last-child>
 
 
 .geosist > div > div > div:first-child >p:first-child{

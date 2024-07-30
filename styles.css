@@ -36,6 +36,13 @@
     align-items: center;
 }
 
+.homepage > .mobile{
+    display: none;
+}
+.mobile-nav{
+    display: none;
+}
+
 .navbar > #button-div{
     display: flex;
     justify-content: center;
@@ -456,13 +463,7 @@
     display: flex;
 }
 
-.geosist > div > div > div > p:first-child{
-    font-family: ABeeZee;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 40px;
-    text-align: left;
-}
+
 
 
 /*Media Queries*/
@@ -476,14 +477,35 @@
         background-position: center;
         height: 900px;
     }
+
+    .homepage > .desktop{
+        display: none;
+    }
+    .homepage > .mobile{
+        display: block;
+    }
     .navbar{
         display: none;
+    }
+    .mobile-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 390px !important;
+        height: 30px;
+        gap: 40px;
+    }
+    .mobile-nav > img{
+        background-color: none;
+    }
+    .mobile-nav > button{
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        width: 16px !important;
+        height: 16px !important;
+    }
 
-    }
-    #primary > img{
-        width: 20px !important;
-        height: 12px !important;
-    }
     .display {
         width: 390px;
         height: 720px;
@@ -622,4 +644,46 @@
         padding-left: 20px;
         height: inherit;
     }
+    .geosist{
+        display: flex;
+        flex-direction: column;
+    }
+    .geosist >div > img{
+        width: 390px !important;
+    }
+    .geosist > div:first-child >div{
+        width: 390px !important;
+        display: flex;
+        flex-direction: column;
+    }
+    .geosist > div:first-child > div >div:last-child{
+        width: 80%;
+    }
+    .geosist > div:first-child > div >div:last-child>div{
+        display: flex;
+        flex-direction: row;
+        margin-left: 0px;
+        align-content: space-around;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 1px !important;
+    }
+    .geosist > div:last-child >div{
+        width: 390px !important;
+        display: flex;
+        flex-direction: column;
+    }
+    .geosist > div:last-child > div >div:last-child{
+        width: 80%;
+    }
+    .geosist > div:last-child > div >div:last-child>div{
+        display: flex;
+        flex-direction: row;
+        width: 390px !important;
+        flex-wrap: wrap;
+        row-gap: 5px;
+        column-gap: 5px;
+    }
+
 }
+
